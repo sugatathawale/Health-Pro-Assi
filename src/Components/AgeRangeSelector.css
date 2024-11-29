@@ -1,0 +1,35 @@
+
+.radio-input {
+    appearance: none; 
+    border: 2px solid #e07a5f; 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    position: relative;
+    cursor: pointer;
+    outline: none; 
+}
+
+
+.radio-input:checked::after {
+    content: '';
+    display: block;
+    width: 10px; 
+    height: 10px; 
+    background-color: orange; 
+    border-radius: 50%; 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.gradient-background {
+    position: relative;
+    background: radial-gradient(25% 25% at 55% 30%, #316e31 20%, transparent 120%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+
